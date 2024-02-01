@@ -67,7 +67,7 @@
 			overflow: auto;
 			height: 8vh;
 			top: 0px;
-			z-index: 2;
+			z-index: 4;
 			background-color: #fafafa;
 		}
 
@@ -105,9 +105,17 @@
 
 	</head>
 	<body>
-
+	<!--바로가기 링크-->
+	<div class="flex2" >
+		<a class="btn btn-primary btn-outline btn-lg" href="#s1">About</a>
+		<a class="btn btn-primary btn-outline btn-lg" href="#s2">Education</a>
+		<a class="btn btn-primary btn-outline btn-lg" href="#s3">Skill</a>
+		<a class="btn btn-primary btn-outline btn-lg" href="#p1">(팀)피트니스</a>
+		<a class="btn btn-primary btn-outline btn-lg" href="#p2">(개인)Diary</a>
+		<a class="btn btn-primary btn-outline btn-lg" href="#p3">(팀)쇼핑몰</a>
+	</div>
 	<div id="colorlib-page">
-		<!--기본정보-->
+		<!--기본정보--><div id="s1"></div>
 		<div id="colorlib-about">
 			<div class="container">
 				<div class="row text-center">
@@ -146,7 +154,7 @@
 			</div>
 		</div>
 
-		<!--교육과정-->
+		<!--교육과정--><div id="s2"></div>
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row text-center">
@@ -253,7 +261,7 @@
 			</div>
 		</div>
 
-		<!--보유기술-->
+		<!--보유기술--><div id="s3"></div>
 		<div id="colorlib-work"> 
 			<div class="container">
 				<div class="row text-center">
@@ -321,7 +329,7 @@
 		</div>
 
 		<!--프로젝트-->
-		<div id="colorlib-blog">
+		<div id="colorlib-blog"><div id="p1"></div>
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Projects</h2>
@@ -340,18 +348,11 @@
 				</div>
 
 				<div class="row animate-box">
-					<!--바로가기 링크-->
-					<div class="flex2" >
-						<a class="btn btn-primary btn-outline btn-lg" href="#p1">(팀)피트니스</a>
-						<a class="btn btn-primary btn-outline btn-lg" href="#p2">(개인)Diary</a>
-						<a class="btn btn-primary btn-outline btn-lg" href="#p3">(팀)쇼핑몰</a>
-					</div>
-
 					<div>
 						<!--피트니스스 시스템-->
 						<div class="item">
 							<div class="col-md-12">
-								<div class="article" id="p1">
+								<div class="article">
 									<a href="http://13.209.51.89/haribo" target="_blank" class="blog-img">
 										<img class="img-responsive" src="images/final.png">
 										<div class="overlay"></div>
@@ -359,6 +360,12 @@
 											<span class="read">Go to Project</h2>
 										</div>
 									</a>
+									<div style="text-align: end;">
+										<a href="./ppt/final-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
+										<a href="./images/final-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
+										<a href="https://github.com/hoe-yun/finalProject" target="_blank" class="btn btn-primary">Github</a>
+										<a href="http://13.209.51.89/haribo" target="_blank" class="btn btn-primary">AWS</a>
+									</div>
 									<div class="desc">
 										<div class="flex">
 											<div>
@@ -477,19 +484,23 @@
 														<span>Language</span> HTML5, CSS3, Java, SQL, JavaScript, Ajax<br>
 														<span>Framework</span> SpringBoot<br>
 														<span>Library</span> JSTL, JQuery, Lombok, MyBatis, Maven, BootStrap<br>
-														<span>Databas+e</span> MariaDB<br>
+														<span>Database</span> MariaDB<br>
 														<span>WAS</span> Apache Tomcat10<br>
 														<span>OS</span> window11<br>
 														<span>TOOL</span> Spring-Tool-Suite4, HeidiSQL
 													</td>
 												</tr>
+												<tr>
+													<th colspan="2">배포환경</th>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<span>Cloud</span> AWS<br>
+														<span>Database</span> MariaDB<br>
+														<span>WAS</span> Apache Tomcat10<br>
+													</td>
+												</tr>
 											</table>
-											<div style="text-align: end;">
-												<a href="./ppt/final-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
-												<a href="./images/final-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
-												<a href="https://github.com/hoe-yun/finalProject" target="_blank" class="btn btn-primary">Github</a>
-												<a href="http://13.209.51.89/haribo" target="_blank" class="btn btn-primary">AWS</a>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -507,6 +518,12 @@
 											<span class="read">Go to Project</h2>
 										</div>
 									</a>
+									<div style="text-align: end;">
+										<a href="./ppt/diary-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
+										<a href="./images/diary-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
+										<a href="https://github.com/hoe-yun/diary_sts" target="_blank" class="btn btn-primary">Github</a>
+										<a href="http://13.209.51.89/diary" target="_blank" class="btn btn-primary">AWS</a>
+									</div>
 									<div class="desc">
 										<div class="flex">
 											<div>
@@ -589,13 +606,17 @@
 														<span>TOOL</span>  Spring-Tool-Suite4, HeidiSQL
 													</td>
 												</tr>
+												<tr>
+													<th colspan="2">배포환경</th>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<span>Cloud</span> AWS<br>
+														<span>Database</span> MariaDB<br>
+														<span>WAS</span> Apache Tomcat10<br>
+													</td>
+												</tr>
 											</table>
-											<div style="text-align: end;">
-												<a href="./ppt/diary-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
-												<a href="./images/diary-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
-												<a href="https://github.com/hoe-yun/diary_sts" target="_blank" class="btn btn-primary">Github</a>
-												<a href="http://13.209.51.89/diary" target="_blank" class="btn btn-primary">AWS</a>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -612,6 +633,12 @@
 											<span class="read">Go to Project</h2>
 										</div>
 									</a>
+									<div style="text-align: end;">
+										<a href="./ppt/mall-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
+										<a href="./images/mall-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
+										<a href="https://github.com/hoe-yun/mall" target="_blank" class="btn btn-primary">Github</a>
+										<a href="http://13.209.51.89:81/mall/home.jsp" target="_blank" class="btn btn-primary">AWS</a>
+									</div>
 									<div class="desc">
 										<div class="flex">
 											<div>
@@ -698,13 +725,17 @@
 														<span>TOOL</span> Eclipse, HeidiSQL
 													</td>
 												</tr>
+												<tr>
+													<th colspan="2">배포환경</th>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<span>Cloud</span> AWS<br>
+														<span>Database</span> MariaDB<br>
+														<span>WAS</span> Apache Tomcat9<br>
+													</td>
+												</tr>
 											</table>
-											<div style="text-align: end;">
-												<a href="./ppt/mall-PPT.pdf" target="_blank" class="btn btn-primary">PPT</a>
-												<a href="./images/mall-ERD.png" target="_blank" class="btn btn-primary">ERD</a>
-												<a href="https://github.com/hoe-yun/mall" target="_blank" class="btn btn-primary">Github</a>
-												<a href="http://13.209.51.89:81/mall/home.jsp" target="_blank" class="btn btn-primary">AWS</a>
-											</div>
 										</div>
 									</div>
 								</div>
